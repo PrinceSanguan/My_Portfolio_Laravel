@@ -1,6 +1,6 @@
 <div class="text-center">
-    <a href="https://laravel.com" target="_blank">
-        <img src="/images/portfolio.png" width="400" alt="Laravel Logo">
+    <a href="#" target="_blank">
+        <img src="/images/portfolio.png" width="400" alt="">
     </a>
 </div>
 
