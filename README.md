@@ -1,6 +1,6 @@
 <div class="text-center">
     <a href="https://laravel.com" target="_blank">
-        <img src="{{ asset('images/portfolio.png') }}" width="400" alt="Laravel Logo">
+        <img src="/images/portfolio.png" width="400" alt="Laravel Logo">
     </a>
 </div>
 
