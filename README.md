@@ -1,8 +1,4 @@
-<div class="text-center">
-    <a href="#" target="_blank">
-        <img src="/images/portfolio.png" width="400" alt="">
-    </a>
-</div>
+![Screenshot](public/images/portfolio.png)
 
 ## About My Portfolio
 
