@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SendMessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', [SendMessageController::class, 'welcomePage'])->name('welcome.page');
+Route::post('/', [SendMessageController::class, 'getMessage'])->name('get.message');
+
+Route::get('/success', [SendMessageController::class, 'showSuccess'])->name('show.success');
+
+Route::get('/reload-captcha', [SendMessageController::class, 'reloadCaptcha']);

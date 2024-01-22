@@ -526,15 +526,26 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="{{route('get.message')}}" method="post" class="form" data-form>
+            @csrf
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+           
+            <div class="form-group mt-2 mb-2">
+              <div class="captcha">
+                <span>{!! captcha_img() !!}</span>
+                <button type="button" class="btn btn-danger reload" id="reload">
+                  &#x21bb;
+                </button>
+              </div>
+            </div>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
