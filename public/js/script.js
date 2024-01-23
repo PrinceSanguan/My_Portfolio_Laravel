@@ -137,17 +137,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
         }
     });
 }
-
-// For Captcha Logic
-$("#reload").click(function () {
-    $.ajax({
-        type: "GET",
-        url: "/reload-captcha", // Update the URL to include the correct base URL
-        success: function (data) {
-            $(".captcha span").html(data.captcha);
-        },
-        error: function (xhr, textStatus, errorThrown) {
-            console.error("Error reloading captcha:", textStatus, errorThrown);
-        },
-    });
-});

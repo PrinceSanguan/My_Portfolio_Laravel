@@ -16,6 +16,7 @@ class SendMessageController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
+            'captcha' => 'required|captcha',
         ]);
 
         // Saving in the database
@@ -38,6 +39,10 @@ class SendMessageController extends Controller
     }
 
     public function reloadCaptcha() {
-        return response()->json(['captcha'=>captcha_img()]);
+        return response()->json(['captcha'=>captcha_img('math')]);
+    }
+
+    public function resume() {
+        return view ('resumes');
     }
 }

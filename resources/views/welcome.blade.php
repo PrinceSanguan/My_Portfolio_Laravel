@@ -526,33 +526,54 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="{{route('get.message')}}" method="post" class="form" data-form>
+          <form action="{{ route('get.message') }}" method="post" class="form" data-form>
             @csrf
-
+        
             <div class="input-wrapper">
-              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-
+                <input type="text" name="name" class="form-input @error('name') is-invalid @enderror" placeholder="Full name" data-form-input value="{{ old('name') }}">
+                @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        {{ $message }}
+                    </span>
+                @enderror
+        
+                <input type="email" name="email" class="form-input @error('email') is-invalid @enderror" placeholder="Email address" data-form-input value="{{ old('email') }}">
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        {{ $message }}
+                    </span>
+                @enderror
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-           
-            <div class="form-group mt-2 mb-2">
-              <div class="captcha">
-                <span>{!! captcha_img() !!}</span>
-                <button type="button" class="btn btn-danger reload" id="reload">
-                  &#x21bb;
+        
+            <textarea name="message" class="form-input @error('message') is-invalid @enderror" placeholder="Your Message" data-form-input>{{ old('message') }}</textarea>
+            @error('message')
+                <span class="invalid-feedback" role="alert">
+                    {{ $message }}
+                </span>
+            @enderror
+        
+            <div class="captcha" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
+                <span style="display: inline-block;">{!! captcha_img('math') !!}</span>
+                <button type="button" class="btn btn-danger reload" id="reload" style="font-size: 3em; color: white; margin-top: 10px;">
+                    &#x21bb;
                 </button>
-              </div>
             </div>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+        
+            <div class="input-wrapper" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
+                <input type="text" class="form-input @error('captcha') is-invalid @enderror" placeholder="Enter Captcha" name="captcha">
+                @error('captcha')
+                    <span class="invalid-feedback" role="alert">
+                        {{ $message }}
+                    </span>
+                @enderror
+            </div>
+        
+            <button class="form-btn" type="submit" data-form-btn style="margin-top: 10px;">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
             </button>
-
-          </form>
+        </form>
+        
 
         </section>
 
@@ -561,5 +582,22 @@
     </div>
 
   </main>
+
+  <script>
+    // For Captcha Logic
+$("#reload").click(function () {
+    $.ajax({
+        type: 'GET',
+        url: "/reload-captcha", // Update the URL to include the correct base URL
+        success: function (data) {
+            $(".captcha span").html(data.captcha);
+        },
+        error: function (xhr, textStatus, errorThrown) {
+            console.error("Error reloading captcha:", textStatus, errorThrown);
+        },
+    });
+});
+
+  </script>
 
   @include('footer')
