@@ -21,3 +21,5 @@ Route::post('/', [SendMessageController::class, 'getMessage'])->name('get.messag
 Route::get('/success', [SendMessageController::class, 'showSuccess'])->name('show.success');
 
 Route::get('/reload-captcha', [SendMessageController::class, 'reloadCaptcha']);
+
+Route::get('/error', [SendMessageController::class, 'error'])->name('error');

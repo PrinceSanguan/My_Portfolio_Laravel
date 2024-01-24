@@ -530,28 +530,14 @@
             @csrf
         
             <div class="input-wrapper">
-                <input type="text" name="name" class="form-input @error('name') is-invalid @enderror" placeholder="Full name" data-form-input value="{{ old('name') }}">
-                @error('name')
-                    <span class="invalid-feedback" role="alert">
-                        {{ $message }}
-                    </span>
-                @enderror
-        
-                <input type="email" name="email" class="form-input @error('email') is-invalid @enderror" placeholder="Email address" data-form-input value="{{ old('email') }}">
-                @error('email')
-                    <span class="invalid-feedback" role="alert">
-                        {{ $message }}
-                    </span>
-                @enderror
+                <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input value="">
+
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input value="">
+
             </div>
         
-            <textarea name="message" class="form-input @error('message') is-invalid @enderror" placeholder="Your Message" data-form-input>{{ old('message') }}</textarea>
-            @error('message')
-                <span class="invalid-feedback" role="alert">
-                    {{ $message }}
-                </span>
-            @enderror
-        
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
             <div class="captcha" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
                 <span style="display: inline-block;">{!! captcha_img('math') !!}</span>
                 <button type="button" class="btn btn-danger reload" id="reload" style="font-size: 3em; color: white; margin-top: 10px;">
@@ -560,12 +546,7 @@
             </div>
         
             <div class="input-wrapper" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
-                <input type="text" class="form-input @error('captcha') is-invalid @enderror" placeholder="Enter Captcha" name="captcha">
-                @error('captcha')
-                    <span class="invalid-feedback" role="alert">
-                        {{ $message }}
-                    </span>
-                @enderror
+                <input type="text" class="form-input" placeholder="Enter Captcha" name="captcha">
             </div>
         
             <button class="form-btn" type="submit" data-form-btn style="margin-top: 10px;">
