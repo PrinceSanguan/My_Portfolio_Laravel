@@ -48,7 +48,12 @@ class SendMessageController extends Controller
     
         $post->insert($data);
     
-        return redirect()->route('show.success');
+        $success = "Thank you for reaching out. Your 
+        inquiry is important to me. Please anticipate a response within 24 hours. 
+        Appreciate your patience.";
+        
+        return redirect()->route('show.success')->with('success', $success);
+        /* return redirect()->route('show.success'); */
     }
 
     public function showSuccess() {
