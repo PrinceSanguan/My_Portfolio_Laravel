@@ -22,6 +22,10 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
+          <li class="navbar-item">
+            <a href="{{ route('login') }}" class="navbar-link">Login</a>
+          </li>
+
         </ul>
 
       </nav>

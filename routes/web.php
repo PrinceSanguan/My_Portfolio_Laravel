@@ -14,7 +14,8 @@ use App\Http\Controllers\SendMessageController;
 |
 */
 
-Route::get('/login', [SendMessageController::class, 'loginUser']);
+Route::get('/login', [SendMessageController::class, 'loginUser'])->name('login');
+Route::post('/login', [SendMessageController::class, 'loginPost'])->name('login.post');
 
 Route::get('/', [SendMessageController::class, 'welcomePage'])->name('welcome.page');
 Route::post('/', [SendMessageController::class, 'getMessage'])->name('get.message');
@@ -24,3 +25,11 @@ Route::get('/success', [SendMessageController::class, 'showSuccess'])->name('sho
 Route::get('/reload-captcha', [SendMessageController::class, 'reloadCaptcha']);
 
 Route::get('/error', [SendMessageController::class, 'error'])->name('error');
+
+Route::post('/logout', [SendMessageController::class, 'logout'])->name('logout');
+
+Route::middleware(['auth'])->group(function () {
+  Route::get('/admin/dashboard', [SendMessageController::class, 'dashboard'])->name('dashboard');
+});
+
+
