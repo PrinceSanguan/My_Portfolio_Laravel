@@ -27,7 +27,7 @@
 
    <!-- Open Graph meta tags -->
  <meta property="og:title" content="Prince Sanguan | Portfolio" />
- <meta property="og:image" content="{{ asset('images/prince.jpg') }}" />
+ <meta property="og:image" content="{{ asset('images/prince1.jpg') }}" />
  <meta property="og:url" content="http://prince-sanguan.free.nf/" />
  <meta property="og:site_name" content="Prince Sanguan | Portfolio" />
  <meta property="og:description" content="Prince Sanguan | Portfolio" />
