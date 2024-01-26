@@ -18,11 +18,6 @@
                     <p style="color: aliceblue; font-size: 3rem; text-align: center;">{{ session('success') }}</p>
                 @endif 
 
-{{--               <p style="color: aliceblue; font-size: 3rem; text-align: center;">Thank you for reaching out. Your 
-                  inquiry is important to me. Please anticipate a response within 24 hours. 
-                  Appreciate your patience.
-              </p>
-           --}}
               <br>
           
               <div style="text-align: center;">

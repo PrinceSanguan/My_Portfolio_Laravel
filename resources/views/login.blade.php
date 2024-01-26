@@ -39,6 +39,16 @@
                       </button>
                   </div>
               </form>
+              <br>
+
+              <div style="text-align: center;">
+                <button class="form-btn" type="submit" data-form-btn style="margin-top: 10px; margin: 0 auto;">
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <a href="{{url('/')}}" style="text-decoration: none; color: inherit;">
+                        <span>Back to the Homepage</span>
+                    </a>
+                </button>
+            </div>
           </section>
 
         </article>

@@ -78,7 +78,12 @@ class SendMessageController extends Controller
     }
 
     public function dashboard() {
-        return view ('admin.dashboard');
+
+         // Fetch all information from the database
+         $informations = ContactInformation::all();
+
+         // Pass the information to the view
+        return view('admin.dashboard', ['informations' => $informations]);
     }
 
 
