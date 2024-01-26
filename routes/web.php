@@ -14,6 +14,7 @@ use App\Http\Controllers\SendMessageController;
 |
 */
 
+Route::get('/login', [SendMessageController::class, 'loginUser']);
 
 Route::get('/', [SendMessageController::class, 'welcomePage'])->name('welcome.page');
 Route::post('/', [SendMessageController::class, 'getMessage'])->name('get.message');

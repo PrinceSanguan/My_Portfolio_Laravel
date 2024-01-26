@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\ContactInformation;
 use Illuminate\Support\Facades\Validator;
 
 
@@ -22,9 +23,9 @@ class SendMessageController extends Controller
         ]);
 
         // Check if user with the provided email already exists
-        $existingUser = User::where('email', $request->input('email'))->first();
+        $existingEmail = ContactInformation::where('email', $request->input('email'))->first();
     
-        if ($existingUser) {
+        if ($existingEmail) {
             // User with the same email already exists, redirect to the error page
             $error = "You have entered an Repeat Email Address";
             return redirect()->route('error')->with('error', $error);
@@ -37,7 +38,7 @@ class SendMessageController extends Controller
         }
     
         // Saving in the database
-        $post = new User;
+        $post = new ContactInformation;
     
         $data = ([
             'name' => $request->input('name'),
@@ -51,9 +52,8 @@ class SendMessageController extends Controller
         $success = "Thank you for reaching out. Your 
         inquiry is important to me. Please anticipate a response within 24 hours. 
         Appreciate your patience.";
-        
+
         return redirect()->route('show.success')->with('success', $success);
-        /* return redirect()->route('show.success'); */
     }
 
     public function showSuccess() {
@@ -70,5 +70,9 @@ class SendMessageController extends Controller
 
     public function error() {
         return view ('error');
+    }
+
+    public function loginUser() {
+        return view ('login');
     }
 }
