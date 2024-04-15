@@ -378,7 +378,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/PrinceSanguan/Job_Portal_Laravel" target="_blank">
+              <a href="https://www.work-from-home.free.nf" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -396,7 +396,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/PrinceSanguan/DFA_Releasing_Verification" target="_blank">
+              <a href="https://www.ncr-east.free.nf" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -414,7 +414,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://github.com/PrinceSanguan/chess_blog" target="_blank">
+              <a href="https://www.chess-philippines.free.nf" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -432,7 +432,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/PrinceSanguan/firstReact" target="_blank">
+              <a href="https://prince-netflix.vercel.app" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -450,7 +450,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://github.com/PrinceSanguan/Wedding_Laravel" target="_blank">
+              <a href="https://www.princecarolwedding.free.nf" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
