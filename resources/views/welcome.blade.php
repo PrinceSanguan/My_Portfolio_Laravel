@@ -414,7 +414,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.chess-philippines.free.nf" target="_blank">
+              <a href="https://chess-philippines.free.nf" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -463,6 +463,78 @@
                 <h3 class="project-title">Wedding Website</h3>
 
                 <p class="project-category">Full Laravel PHP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="http://www.captcha.free.nf" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{asset('images/project-6.png')}}" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Crypto Captcha</h3>
+
+                <p class="project-category">Full Laravel PHP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.butterflysushibars.com" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{asset('images/project-7.png')}}" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Static Restaurant Website</h3>
+
+                <p class="project-category">Full Laravel PHP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://www.ivnmodule.free.nf" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{asset('images/project-8.png')}}" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Student Management System</h3>
+
+                <p class="project-category">Full Laravel PHP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://ppdsouth1.free.nf" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{asset('images/project-9.png')}}" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Philippine Ports Authority</h3>
+
+                <p class="project-category">Full Core PHP</p>
 
               </a>
             </li>
