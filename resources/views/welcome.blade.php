@@ -193,6 +193,21 @@
 
         </section>
 
+        <!--
+          - Location
+        -->
+
+        <section class="mapbox" data-mapbox>
+
+          <header>
+          <h3 class="h3 testimonials-title">&nbsp;&nbsp;Location</h3>
+        </header>
+
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123767.78884801056!2d120.90655520712271!3d14.209797366375923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d5fead78983f%3A0x1ef1f6de9b810218!2sBayan%20ng%20Silang%2C%20Cavite!5e0!3m2!1sfil!2sph!4v1705922079164!5m2!1sfil!2sph" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
 
         <!--
           - testimonials modal
@@ -349,201 +364,74 @@
 
         </section>
 
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certificate</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Civil Service Exam (Professional)</h4>
+
+              <span>Quezon City - May 2018 (Passed)</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Diagnostic Written Exam</h4>
+
+              <span>Department of Information and Communications Technology (DICT) - April 2024 (Passed)</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
       </article>
 
       <!--
         - #PORTFOLIO
       -->
 
-  {{--     Web design == React JS
-      Application == Core PHP
-      Web Development == PHP Laravel --}}
-
-      <article class="portfolio" data-page="portfolio">
-
+    <article class="portfolio" data-page="portfolio">
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+            <h2 class="h2 article-title">Portfolio</h2>
         </header>
-
+    
         <section class="projects">
-
           <div class="filter-select-box">
-
-            <p class="filter-select" data-select>
-
-            </p>
-
+              <p class="filter-select" data-select></p>
           </div>
-
+      
           <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://www.work-from-home.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-1.png')}}" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Job Portal</h3>
-
-                <p class="project-category">Full Laravel PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://www.ncr-east.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-2.png')}}" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DFA Releasing System</h3>
-
-                <p class="project-category">Full Core PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://chess-philippines.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-3.png')}}" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Blog Website</h3>
-
-                <p class="project-category">Full Core PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://prince-netflix.vercel.app" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-4.png')}}" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Netflix Clone Inspired</h3>
-
-                <p class="project-category">Full React JS</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.princecarolwedding.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-5.png')}}" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Wedding Website</h3>
-
-                <p class="project-category">Full Laravel PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="http://www.captcha.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-6.png')}}" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Crypto Captcha</h3>
-
-                <p class="project-category">Full Laravel PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.butterflysushibars.com" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-7.png')}}" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Static Restaurant Website</h3>
-
-                <p class="project-category">Full Laravel PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.ivnmodule.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-8.png')}}" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Student Management System</h3>
-
-                <p class="project-category">Full Laravel PHP</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://ppdsouth1.free.nf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="{{asset('images/project-9.png')}}" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Philippine Ports Authority</h3>
-
-                <p class="project-category">Full Core PHP</p>
-
-              </a>
-            </li>
-
+              @foreach($projects as $project)
+                  <li class="project-item active" data-filter-item data-category="{{ $project->category }}">
+                      <a href="{{ route('setProjectSession', ['id' => $project->id]) }}">
+                          <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="{{ asset('upload-profile/' . $project->image) }}" alt="{{ $project->summary }}" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">{{ $project->project }}</h3>
+                          <p class="project-category">{{ $project->category }}</p>
+                      </a>
+                  </li>
+              @endforeach
           </ul>
+      </section>
 
-        </section>
+    </article>
 
-      </article>
 
       <!--
         - #CONTACT
@@ -559,42 +447,6 @@
           <figure>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123767.78884801056!2d120.90655520712271!3d14.209797366375923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d5fead78983f%3A0x1ef1f6de9b810218!2sBayan%20ng%20Silang%2C%20Cavite!5e0!3m2!1sfil!2sph!4v1705922079164!5m2!1sfil!2sph" width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="{{ route('get.message') }}" method="post" class="form" data-form>
-            @csrf
-        
-            <div class="input-wrapper">
-                <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input value="">
-
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input value="">
-
-            </div>
-        
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <div class="captcha" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
-                <span style="display: inline-block;">{!! captcha_img('math') !!}</span>
-                <button type="button" class="btn btn-danger reload" id="reload" style="font-size: 3em; color: white; margin-top: 10px;">
-                    &#x21bb;
-                </button>
-            </div>
-        
-            <div class="input-wrapper" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
-                <input type="text" class="form-input" placeholder="Enter Captcha" name="captcha">
-            </div>
-        
-            <button class="form-btn" type="submit" data-form-btn style="margin-top: 10px;">
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-            </button>
-        </form>
-        
-
         </section>
 
       </article>

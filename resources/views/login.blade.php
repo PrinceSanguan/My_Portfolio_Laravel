@@ -9,7 +9,7 @@
         <article class="about active" data-page="about">
 
             <header style="text-align: center;">
-                <h2 class="h2 article-title">Prince Login Page</h2>
+                <h2 class="h2 article-title">Secret Login Page</h2>
             </header>
 
             <section class="about-text">
@@ -44,11 +44,12 @@
               <div style="text-align: center;">
                 <button class="form-btn" type="submit" data-form-btn style="margin-top: 10px; margin: 0 auto;">
                     <ion-icon name="paper-plane"></ion-icon>
-                    <a href="{{url('/')}}" style="text-decoration: none; color: inherit;">
+                    <a href="{{route('welcome.page')}}" style="text-decoration: none; color: inherit;">
                         <span>Back to the Homepage</span>
                     </a>
                 </button>
-            </div>
+             </div>
+             
           </section>
 
         </article>

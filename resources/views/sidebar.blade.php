@@ -9,7 +9,7 @@
     <div class="info-content">
       <h1 class="name" title="Prince Sanguan">Prince Sanguan</h1>
 
-      <p class="title">Web developer</p>
+      <p class="title">Programmer</p>
     </div>
 
     <button class="info_more-btn" data-sidebar-btn>
@@ -89,7 +89,7 @@
     <ul class="social-list">
 
       <li class="social-item">
-        <a href="https://www.facebook.com/Grandmaster1997/" class="social-link">
+        <a href="https://www.facebook.com/profile.php?id=61560390520092&mibextid=ZbWKwL" class="social-link">
           <ion-icon name="logo-facebook"></ion-icon>
         </a>
       </li>
@@ -101,8 +101,8 @@
       </li>
 
       <li class="social-item">
-        <a href="https://www.instagram.com/princesanguan/" class="social-link">
-          <ion-icon name="logo-instagram"></ion-icon>
+        <a href="https://vt.tiktok.com/ZSYUBrQ77/" class="social-link">
+          <ion-icon name="logo-tiktok"></ion-icon>
         </a>
       </li>
 
